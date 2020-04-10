@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter} from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import './index.css';
 import history from './utils/history';
 import * as serviceWorker from './serviceWorker';
 import RouterIndex from "./router";
 
 ReactDOM.render(
-    <HashRouter history={history}>
+    <Router history={history}>
         <RouterIndex/>
-    </HashRouter>,
+    </Router>,
   document.getElementById('root')
 );
 
