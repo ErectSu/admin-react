@@ -23,10 +23,7 @@ export const MenuData=[
             {
                 index: 'H5',
                 title: 'H5制作工具',
-            },
-            {
-                index: 'upload',
-                title: '文件上传'
+                link: '/home/h5'
             }
         ]
     },
