@@ -1,30 +1,22 @@
 import React from 'react';
 
-import { Input, Select } from 'antd';
+import { Input } from 'antd';
+import BaseSelect from '../../../component/Select/BaseSelect';
 
 const { Search } = Input;
-
-const { Option } = Select;
+const Options = [{value:'option1',key:'1'},{value:'option2',key:'2'}]
 
 export default function SearchBar(){
+    
+    const handleSelect = (value) => {
+        console.log(value);
+    }
 
-    const handleChange = (value) => {
-        console.log(`selected ${value}`);
-    };
+    return(<div style={{marginLeft:20,marginTop:10,display:'flex',alignItems:'center'}}>
 
-    return(<div style={{marginLeft:20,marginTop:10,display:'flex'}}>
+        <BaseSelect label='类型：' Options={Options} defaultValue="option1" SelectValue={ handleSelect.bind(this) }/>
 
-        <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
-            <Option value="jack">Jack</Option>
-            <Option value="lucy">Lucy</Option>
-            <Option value="Yiminghe">yiminghe</Option>
-        </Select>
-
-        <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
-            <Option value="jack">Jack</Option>
-            <Option value="lucy">Lucy</Option>
-            <Option value="Yiminghe">yiminghe</Option>
-        </Select>
+        <BaseSelect label='类型：' Options={Options} defaultValue="option1" SelectValue={ handleSelect.bind(this) }/>
 
         <Search
             placeholder="input search text"

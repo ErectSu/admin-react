@@ -1,7 +1,8 @@
 .menu-list{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #001529;
     max-width: 200px;
+    height: auto;
 }
 .link{
     color:rgba(255,255,255,0.65);
