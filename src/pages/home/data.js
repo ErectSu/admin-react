@@ -24,67 +24,117 @@ export const MenuData=[
                 index: 'H5',
                 title: 'H5制作工具',
                 link: '/home/h5'
+            },
+            {
+                index: 'upload',
+                title: '图片上传',
+                link: '/home/upload'
+            },
+            {
+                index: 'picture',
+                title: '图片处理',
+                link: '/home/picture'
             }
         ]
     },
     {
         icon: 'icon-wocanyu',
         index: 'table',
-        title: '基础表格'
+        title: '基础表格',
+        subs: [
+            {
+                index: 'table1',
+                title: '基础表格1',
+                link: '/home/table1'
+            },
+            {
+                index: 'table2',
+                title: '基础表格2',
+                link: '/home/table2'
+            },{
+                index: 'table3',
+                title: '基础表格3',
+                link: '/home/table3'
+            },{
+                index: 'table4',
+                title: '基础表格4',
+                link: '/home/table4'
+            },{
+                index: 'table5',
+                title: '基础表格5',
+                link: '/home/table5'
+            }
+        ]
     },
     {
         icon: 'icon-zhizuoliucheng',
-        index: 'tabs',
-        title: 'tab选项卡'
-    },
-    {
-        icon: 'icon-biaoqing',
-        index: 'icon',
-        title: '自定义图标'
-    },
-    {
-        icon: 'icon-biaoqing',
-        index: 'charts',
-        title: 'schart图表'
-    },
-    {
-        icon: 'icon-huizhiguize',
-        index: '6',
-        title: '拖拽组件',
+        index: 'chart',
+        title: '基础图表',
         subs: [
             {
-                index: 'drag',
-                title: '拖拽列表'
+                index: 'chart1',
+                title: '折线图',
+                link: '/home/chart1'
             },
             {
-                index: 'dialog',
-                title: '拖拽弹框'
+                index: 'chart2',
+                title: '柱状图',
+                link: '/home/chart2'
+            },{
+                index: 'chart3',
+                title: '饼图',
+                link: '/home/chart3'
+            },{
+                index: 'chart4',
+                title: '热力图',
+                link: '/home/chart4'
+            },{
+                index: 'chart5',
+                title: '直方图',
+                link: '/home/chart5'
             }
         ]
+    },
+    {
+        icon: 'icon-wofaqi',
+        index: 'excel',
+        title: 'excel',
+        link: '/home/excel'
+    },
+    {
+        icon: 'icon-tianjiachengyuan',
+        index: 'save',
+        title: '云盘',
+        link: '/home/save'
+    },
+    {
+        icon: 'icon-zhuanrang',
+        index: 'drag',
+        title: '拖拽组件',
+        link: '/home/drag'
     },
     {
         icon: 'icon-pcduan',
         index: 'i18n',
-        title: '国际化功能'
+        title: '国际化功能',
+        link: '/home/i18n'
     },
     {
-        icon: 'icon-weitijiao',
-        index: '7',
-        title: '错误处理',
-        subs: [
-            {
-                index: 'permission',
-                title: '权限测试'
-            },
-            {
-                index: '404',
-                title: '404页面'
-            }
-        ]
+        icon: 'icon-youxiang',
+        index: '/feedback',
+        title: '问题反馈',
+        link: '/home/feedback'
+    },
+    {
+        icon: 'icon-biaoqing',
+        index: '/behavior',
+        title: '自定义图标',
+        link: '/home/behavior'
     },
     {
         icon: 'icon-dashang',
         index: '/donate',
-        title: '支持作者'
+        title: '支持作者',
+        link: '/home/donate'
     }
 ];

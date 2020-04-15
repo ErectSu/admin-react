@@ -5,6 +5,7 @@ import Index from "../pages/index";
 import MarkDown from "../pages/markdown";
 import H5 from "../pages/h5";
 import H5Detail from '../pages/h5/pages/h5Detail';
+import {IconList} from '../component/Menu/IconList';
 
 export default function ContentIndex(){
     return (<Switch>
@@ -14,5 +15,6 @@ export default function ContentIndex(){
         <Route path='/home/markdown'  component={MarkDown}/>
         <Route path='/home/h5'  component={H5}/>
         <Route path='/home/h5Detail'  component={H5Detail}/>
+        <Route path='/home/behavior' component={IconList}/>
     </Switch>)
 }

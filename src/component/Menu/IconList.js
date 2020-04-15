@@ -7,9 +7,9 @@ const IconFont = createFromIconfontCN({
 
 export const IconList = () => {
     return (
-        <div style={{fontSize:20}}>
-                <IconFont type="icon-tuichu"/>icon-tuichu<br/>
+        <div style={{fontSize:20, display:"flex", flexWrap:"wrap"}}>
                 <IconFont type="icon-facebook"/>icon-facebook<br/>
+                <IconFont type="icon-tuichu"/>icon-tuichu<br/>
                 <IconFont type="icon-twitter"/>icon-twitter<br/>
                 <IconFont type="icon-fanhui"/>icon-fanhui<br/>
                 <IconFont type="icon-xiangyou"/>icon-xiangyou<br/>
