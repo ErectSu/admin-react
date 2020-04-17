@@ -6,6 +6,8 @@ import MarkDown from "../pages/markdown";
 import H5 from "../pages/h5";
 import H5Detail from '../pages/h5/pages/h5Detail';
 import {IconList} from '../component/Menu/IconList';
+import Feedback from "../pages/feedback/feedback";
+import UploadPic from "../pages/upload/upload";
 
 export default function ContentIndex(){
     return (<Switch>
@@ -16,5 +18,7 @@ export default function ContentIndex(){
         <Route path='/home/h5'  component={H5}/>
         <Route path='/home/h5Detail'  component={H5Detail}/>
         <Route path='/home/behavior' component={IconList}/>
+        <Route path='/home/feedback' component={Feedback} />
+        <Route path='/home/upload' component={UploadPic} />
     </Switch>)
 }
