@@ -1,41 +1,34 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 import { Drawer, Form, Button, Col, Row, Input, DatePicker } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import './index.css';
 
 export default function AddTodo(props){
-    const [visible, setVisible] = useState(false);
-    const [data,setData] = useState(null);
 
-    useEffect(()=>{
-        setData({
-            date: '',
-            des: ''
-        })
-    },[])
+    const [visible, setVisible] = useState(false);
+    const [date, setDate] = useState([]);
+    const [des, setDes] = useState('');
 
     const showDrawer = () => {
         setVisible(true);
     };
-    
+
     const onClose = () => {
         setVisible(false);
     };
 
     const onSubmit = () => {
-        props.subData(data);
-        setData({
-            date: '',
-            des: ''
+        props.onSubmit({
+            user:'admin',
+            des: des,
+            fromDate: date[0],
+            toDate: date[1],
+            label: 1,
+            todoState:0
         });
-        setVisible(false);    
-    }
-    const handleChange = (date, des) => {
-        setData({
-            date: date,
-            des: des
-        })
-    }
+        setVisible(false);
+    };
+
     return (
         <>
         <Button type="primary" onClick={showDrawer}>
@@ -44,6 +37,7 @@ export default function AddTodo(props){
         <Drawer
           title="创建事项"
           width={360}
+          destroyOnClose={true}
           onClose={onClose}
           visible={visible}
           bodyStyle={{ paddingBottom: 80 }}
@@ -71,11 +65,11 @@ export default function AddTodo(props){
                 <Form.Item
                   name="dateTime"
                   label="时间"
-                  rules={[{ required: true, message: 'Please choose the dateTime' }]}
+                  rules={[{ required: true, message: '请选择时间' }]}
                 >
                   <DatePicker.RangePicker
                     style={{ width: '100%' }}
-                    onChange = {(value,formatString) => (handleChange(formatString,data.des))}
+                    onChange = {(value,formatString) => (setDate(formatString))}
                   />
                 </Form.Item>
               </Col>
@@ -88,13 +82,13 @@ export default function AddTodo(props){
                   rules={[
                     {
                       required: true,
-                      message: 'please enter description',
+                      message: '请输入代办事项',
                     },
                   ]}
                 >
-                  <Input.TextArea rows={4} 
-                  placeholder="please enter description" 
-                  onChange={({ target: { value } })=>(handleChange(data.date,value))}/>
+                  <Input.TextArea
+                      onChange={({target: {value}})=>{setDes(value)}}
+                      rows={4}/>
                 </Form.Item>
               </Col>
             </Row>
