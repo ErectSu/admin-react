@@ -38,35 +38,6 @@ export const MenuData=[
         ]
     },
     {
-        icon: 'icon-wocanyu',
-        index: 'table',
-        title: '基础表格',
-        subs: [
-            {
-                index: 'table1',
-                title: '基础表格1',
-                link: '/home/table1'
-            },
-            {
-                index: 'table2',
-                title: '基础表格2',
-                link: '/home/table2'
-            },{
-                index: 'table3',
-                title: '基础表格3',
-                link: '/home/table3'
-            },{
-                index: 'table4',
-                title: '基础表格4',
-                link: '/home/table4'
-            },{
-                index: 'table5',
-                title: '基础表格5',
-                link: '/home/table5'
-            }
-        ]
-    },
-    {
         icon: 'icon-zhizuoliucheng',
         index: 'chart',
         title: '基础图表',
@@ -90,10 +61,16 @@ export const MenuData=[
                 link: '/home/chart4'
             },{
                 index: 'chart5',
-                title: '直方图',
+                title: '点图',
                 link: '/home/chart5'
             }
         ]
+    },
+    {
+        icon: 'icon-wocanyu',
+        index: 'table',
+        title: '表单生成器',
+        link: '/home/table'
     },
     {
         icon: 'icon-wofaqi',
@@ -112,12 +89,6 @@ export const MenuData=[
         index: 'drag',
         title: '拖拽组件',
         link: '/home/drag'
-    },
-    {
-        icon: 'icon-pcduan',
-        index: 'i18n',
-        title: '国际化功能',
-        link: '/home/i18n'
     },
     {
         icon: 'icon-youxiang',
