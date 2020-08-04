@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import {withRouter} from 'react-router-dom';
-import './index.css';
+import './index.less';
 
 const LoginIndex = (props) => {
     const onFinish = values => {
@@ -12,9 +12,9 @@ const LoginIndex = (props) => {
     const onFinishFailed = errorInfo => {
         console.log('Failed:', errorInfo);
     };
-
     return (
-        <Form
+        <>
+            <Form
             className="login"
             name="basic"
             initialValues={{ remember: true }}
@@ -49,7 +49,7 @@ const LoginIndex = (props) => {
                     Submit
                 </Button>
             </Form.Item>
-        </Form>
+        </Form></>
     );
 }
 export const Login = withRouter(LoginIndex);

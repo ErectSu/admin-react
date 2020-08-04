@@ -5,7 +5,7 @@ import Index from "../pages/index";
 import MarkDown from "../pages/markdown";
 import H5 from "../pages/h5";
 import H5Detail from '../pages/h5/pages/h5Detail';
-import {IconList} from '../component/Menu/IconList';
+import {IconList} from '../components/Menu/IconList';
 import Feedback from "../pages/feedback/feedback";
 import UploadPic from "../pages/upload/upload";
 import LineChart from "../pages/chart/lineChart";

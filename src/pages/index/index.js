@@ -1,9 +1,9 @@
 import React,{ useEffect } from 'react';
 import { Card, Button, Tag } from 'antd';
 import {connect} from 'react-redux';
-import ToDoListCalendar from '../../component/ToDoList/ToDoListCalendar';
-import BasicToDoList from '../../component/ToDoList/BasicToDoList';
-import AddToDo from '../../component/ToDoList/AddToDo';
+import ToDoListCalendar from '../../components/ToDoList/ToDoListCalendar';
+import BasicToDoList from '../../components/ToDoList/BasicToDoList';
+import AddToDo from '../../components/ToDoList/AddToDo';
 
 function Index(props) {
     const {dispatch} = props;

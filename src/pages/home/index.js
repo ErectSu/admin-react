@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Layout, Menu, Dropdown, Avatar} from 'antd';
-import MenuList from '../../component/Menu/MenuList';
+import MenuList from '../../components/Menu/MenuList';
 import { Link } from 'react-router-dom';
 import { MenuData } from './data';
 import {

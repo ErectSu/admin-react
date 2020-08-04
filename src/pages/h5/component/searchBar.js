@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { Input } from 'antd';
-import BaseSelect from '../../../component/Select/BaseSelect';
+import BaseSelect from '../../../components/Select/BaseSelect';
 
 const { Search } = Input;
 const Options = [{value:'option1',key:'1'},{value:'option2',key:'2'}]
 
 export default function SearchBar(){
-    
+
     const handleSelect = (value) => {
         console.log(value);
     }
